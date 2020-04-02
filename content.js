@@ -1,11 +1,5 @@
-var button = page.getElementsByClassName(".skipElement")
+const elements = document.querySelectorAll('._3j7s9');
 
-function checkButton() {
-    if(button == null) {
-        setTimeout(checkButton, 50);
-    } else {
-        button.click();
-    }
-}
-
-checkButton();
+Array.from(elements).forEach((element) => {
+      return element.remove()
+  });

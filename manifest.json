@@ -1,10 +1,10 @@
 {
-    "name": "Auto Skip Intro (Netflix and Prime)",
+    "name": "WhatsApp Web Privacy",
     "version": "1.0",
     "manifest_version": 2,
     "content_scripts": [
         {
-            "matches": ["<all_urls>"],
+            "matches": ["web.whatsapp.com"],
             "js": ["content.js"]
         }
     ]
