@@ -1,11 +1,18 @@
 const elements = document.querySelectorAll('._3j7s9');
 
+// Hide chat previews
 Array.from(elements).forEach((element) => {
       return element.style.display = "none";
   });
 
-const widths = document.querySelectorAll('._1FTCC');
+// Show chat previews
+Array.from(elements).forEach((element) => {
+    return element.style.display = "";
+});
 
-Array.from(widths).forEach((element) => {
-    return width.css('width', {$('._3FXB1').width})
+// Keep showing new message notification
+
+const notifications = document.querySelectorAll('._15G96');
+Array.from(notifications).forEach((notification) => {
+    return notification.style.display = "";
 });
