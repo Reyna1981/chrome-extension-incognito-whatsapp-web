@@ -13,10 +13,3 @@
 		})
 	)	
 })();
-
-// // Keep showing new message notification
-
-// const notifications = document.querySelectorAll('._15G96');
-// Array.from(notifications).forEach((notification) => {
-//     return notification.style.display = "";
-// });
