@@ -2,21 +2,21 @@
 	const names = document.querySelectorAll('._3NFp9');
 	const emojis = document.querySelectorAll('._3NFp9 .wa');
 
-	if(document.querySelector('._3NFp9').style.visibility == "") {
+	if(document.querySelector('._3NFp9').style.display == "") {
 		// Hide name and chat previews
 		Array.from(names).forEach((name) => {
-			return name.style.visibility = "hidden";
+			return name.style.display = "none";
 			});
 		Array.from(emojis).forEach((emoji) => {
-			return emoji.style.visibility = "hidden";
+			return emoji.style.display = "none";
 			});
 	} else{
 		// Show name and chat previews
 		Array.from(names).forEach((name) => {
-			return name.style.visibility = "";
+			return name.style.display = "";
 			});
 		Array.from(emojis).forEach((emoji) => {
-			return emoji.style.visibility = "";
+			return emoji.style.display = "";
 			});
 	}
 })();
