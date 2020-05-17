@@ -1,11 +1,19 @@
 {
     "name": "WhatsApp Web Privacy",
+    "desctiption": "Hide chat previews on WhatsApp Web.",
     "version": "1.0",
     "manifest_version": 2,
-    "content_scripts": [
-        {
-            "matches": ["web.whatsapp.com"],
-            "js": ["content.js"]
-        }
-    ]
+    "permissions": [
+        "activeTab",
+        "https://web.whatsapp.com/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_title": "Hide Chat"
+    }
 }
