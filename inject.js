@@ -5,18 +5,18 @@
 	if(document.querySelector('._3NFp9').style.opacity == "") {
 		// Hide name and chat previews
 		Array.from(names).forEach((name) => {
-			return name.style.opacity = "0";
+			return name.style.cssText = "opacity: 0; transition: .1s;";
 			});
 		Array.from(emojis).forEach((emoji) => {
-			return emoji.style.opacity = "0";
+			return emoji.style.cssText = "opacity: 0; transition: opacity .1s;";
 			});
 	} else{
 		// Show name and chat previews
 		Array.from(names).forEach((name) => {
-			return name.style.opacity = "";
+			return name.style.cssText = "opacity: ; transition: .1s;";
 			});
 		Array.from(emojis).forEach((emoji) => {
-			return emoji.style.opacity = "";
+			return emoji.style.cssText = "opacity: ; transition: opacity .1s;";
 			});
 	}
 })();
