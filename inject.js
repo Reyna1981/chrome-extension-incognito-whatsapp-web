@@ -8,7 +8,7 @@
 			return name.style.cssText = "opacity: 0; transition: .1s;";
 			});
 		Array.from(emojis).forEach((emoji) => {
-			return emoji.style.cssText = "opacity: 0; transition: opacity .1s;";
+			return emoji.style.opacity = "0";
 			});
 	} else{
 		// Show name and chat previews
@@ -16,7 +16,7 @@
 			return name.style.cssText = "opacity: ; transition: .1s;";
 			});
 		Array.from(emojis).forEach((emoji) => {
-			return emoji.style.cssText = "opacity: ; transition: opacity .1s;";
+			return emoji.style.opacity = "";
 			});
 	}
 })();
